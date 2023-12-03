@@ -1,13 +1,13 @@
 <?php
 
-class Foo
+interface Foo
 {
     public const string BAR = 'baz';
 }
 
 var_dump(Foo::BAR);
 
-// class Bar extends Foo
+// class Bar implements Foo
 // {
 //     public const int BAR = 42;
 // }
