@@ -6,7 +6,7 @@ readonly class Post
         public DateTime $createdAt,
     ) {}
 
-    public function __clone()
+    public function __clone(): void
     {
         $this->createdAt = clone $this->createdAt;
     }

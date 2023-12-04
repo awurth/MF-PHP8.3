@@ -6,7 +6,7 @@ readonly class Post
         public DateTime $createdAt,
     ) {}
 
-    public function __clone()
+    public function __clone(): void
     {
         $this->createdAt = clone $this->createdAt;
     }
@@ -14,6 +14,6 @@ readonly class Post
 
 $post = new Post(createdAt: new DateTime());
 
-$clonedPost = clone $post;
+$clonedPost = clone $post; // Fatal error: Uncaught Error: Cannot modify readonly property Post::$createdAt
 
 var_dump($clonedPost->createdAt === $post->createdAt);

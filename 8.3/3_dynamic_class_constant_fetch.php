@@ -2,7 +2,7 @@
 
 class Foo
 {
-    public const BAR = 'bar';
+    public const string BAR = 'bar';
 }
 
 $name = 'BAR';

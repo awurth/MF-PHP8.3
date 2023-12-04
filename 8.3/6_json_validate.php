@@ -1,6 +1,6 @@
 <?php
 
-$valid = json_validate('
+$valid = json_validate(json: '
     {
         "foo": "bar",
         "bar": [
@@ -13,12 +13,12 @@ $valid = json_validate('
     }
 ');
 
-var_dump($valid);
+var_dump($valid); // true
 
-$invalid = json_validate('
+$invalid = json_validate(json: '
     {
         "foo": "bar",
     }
 ');
 
-var_dump($invalid);
+var_dump($invalid); // false

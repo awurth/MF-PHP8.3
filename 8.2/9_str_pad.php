@@ -16,4 +16,4 @@ $string = str_pad(
     pad_string: '❤❓❇',
 );
 
-var_dump($string);
+var_dump($string); // ▶▶

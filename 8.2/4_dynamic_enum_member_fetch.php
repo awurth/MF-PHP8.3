@@ -7,10 +7,9 @@ enum FooEnum: string
 
 $name = 'Bar';
 
+// Will throw a syntax error
 $bar = FooEnum::{$name}->value;
-
 var_dump($bar);
 
 // $bar = constant(Foo::class . '::' . $name)->value;
-//
 // var_dump($bar);
