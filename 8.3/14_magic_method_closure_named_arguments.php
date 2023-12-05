@@ -2,7 +2,7 @@
 
 class Foo
 {
-    public function __call($name, $args)
+    public function __call($name, $args): void
     {
         var_dump($name, $args);
     }

@@ -8,4 +8,4 @@ $class = new readonly class {
 
 $instance = new $class();
 
-var_dump($class->foo);
+var_dump($class->foo); // bar
